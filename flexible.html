@@ -16,8 +16,8 @@
             /* justify-content: space-evenly; */
             /* justify-content: space-around; */
             /* justify-content: space-between; */
-            justify-content: center;
-            align-items: stretch;
+            /* justify-content: center;
+            align-items: stretch; */
             /* align-items: flex-end; */
             /* align-items: center; */
             
@@ -27,7 +27,14 @@
             /* height: 200px; */
             border: 2px dashed indigo;
             font-size: 2em;
+            /* flex-grow: 1; */
+        }
+        #box-1{
+            order: 2;
+        }
+        #box-2{
             flex-grow: 1;
+            order: 1;
         }
     </style>
 
@@ -35,10 +42,9 @@
 <body>
     <h1>Now I with flexible right now</h1>
     <div class="container">
-        <div class="box">box-1</div>
-        <div class="box">box-2</div>
-        <div class="box">box-3</div>
-        <div class="box">box-4</div>
+        <div id="box-1" class="box">box-1</div>
+        <div id="box-2" class="box">box-2</div>
+       
     </div>
 
 
