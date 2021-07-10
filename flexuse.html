@@ -5,8 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flex Use</title>
+
+    <script src="https://kit.fontawesome.com/2980fc5997.js" crossorigin="anonymous"></script>
+    <style>
+        nav a{
+            text-decoration: none;
+            padding-left: 10px;
+            font-size: 1.3em;
+            color: lightslategrey;
+        }
+        nav a:hover{
+            color: #7e2980;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;    
+        }
+        .login-area{
+            display: flex;
+            justify-content: center;
+            
+        }
+        .login-form input,
+        button{
+            font-size: 1.4em;
+            padding: 10px;
+            margin-top: 20px;
+            border: 1px solid lightsteelblue;
+            border-radius: 10px;
+        }
+        .login-form button{
+            background: linear-gradient( #a631d4, #8313ce);
+            font-weight: bold;
+
+        }
+
+    </style>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <span>
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">Orders</a>
+                <a href="#">About Us</a>
+
+            </span>
+            <span>
+                <a><i class="fas fa-user"></i></a>
+                <a><i class="fas fa-sign-out-alt"></i></a>
+            </span>
+        </nav>
+    </header>
+
+    <section class="login-area">
+        <form action="" class="login-form">
+            <h2>Lonin</h2>
+            <input type="email" name="email" placeholder="Your Email" id="" required>
+            <input type="password" name="password" placeholder="Your Password" id="" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
 </body>
 </html>
